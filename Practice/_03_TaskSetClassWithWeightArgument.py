@@ -16,4 +16,4 @@ class MyUser(User):
     tasks = [SearchProduct]
 
 ##User and tasks in different class
-## Tasks with probability to execute than others
+##Tasks with probability to execute than others
