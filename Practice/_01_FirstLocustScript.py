@@ -11,3 +11,5 @@ class MyUser(User):
     @task
     def my_task2(self):
         print("task2 executing")
+
+##User and tasks in same class
