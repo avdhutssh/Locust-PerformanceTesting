@@ -1,5 +1,6 @@
 from locust import events
 
+from TaskSetLib.CategoryNavigate import NavigateByCategory
 from UserLib.GuestHttpUser import GuestHttpUser
 from UserLib.RegisteredHttpUser import RegisteredHttpUser
 
@@ -17,9 +18,9 @@ def on_test_stop(**kwargs):
 
 class UserGroupA(RegisteredHttpUser):
     weight = 5
-    RegisteredHttpUser.tasks = []
+    RegisteredHttpUser.tasks = [NavigateByCategory]
 
 
 class UserGroupB(GuestHttpUser):
     weight = 1
-    RegisteredHttpUser.tasks = []
+    RegisteredHttpUser.tasks = [NavigateByCategory]
