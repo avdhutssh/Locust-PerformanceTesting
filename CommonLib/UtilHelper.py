@@ -15,3 +15,11 @@ class UtilHelper:
     def get_current_time_stamp():
         now = datetime.now()
         return datetime.timestamp(now)
+
+    @staticmethod
+    def get_base_header():
+        base_header = {
+            'Content-type': 'application/x-www-form-urlencoded',
+            'Connection': 'keep-alive'
+        }
+        return base_header
