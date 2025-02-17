@@ -23,3 +23,13 @@ class UtilHelper:
             'Connection': 'keep-alive'
         }
         return base_header
+
+    @staticmethod
+    def get_base_header_with_cookie(cookie):
+        cookie_header = UtilHelper.get_base_header()
+        cookie_str = ""
+        for item in cookie.iteritems():
+            cookie_str += item[0] + "=" + item[1]
+        cookie_header['Cookie'] = cookie_str
+        print("---------$$$$$$$---------" + cookie_header)
+        return cookie_header
