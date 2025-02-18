@@ -1,10 +1,10 @@
-import csv
-import socket
-
 from locust import events
+import socket
+import csv
 
 
 class EventHandlers:
+
     hostname = socket.gethostname()
     req_success_data_list = []
     req_failure_data_list = []
@@ -17,7 +17,7 @@ class EventHandlers:
     @events.request_success.add_listener
     def request_success_handlers(request_type, name, response_time, response_length, **kwagrs):
         EventHandlers.req_success_data_list.append([EventHandlers.hostname, request_type, name, response_time,
-                                                    response_length, "PASS"])
+                                                   response_length, "PASS"])
 
     @staticmethod
     @events.request_failure.add_listener
