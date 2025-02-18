@@ -3,14 +3,15 @@ import os
 
 
 class UserLoader:
+
     user_list = []
-    csv_file_path = os.getcwd() + "/Data/userCreds.csv"
+    csv_file_path = os.getcwd() + "/Data/user.csv"
 
     @staticmethod
     def load_users():
         reader = csv.DictReader(open(UserLoader.csv_file_path))
-        for row in reader:
-            UserLoader.user_list.append(row)
+        for line_elem in reader:
+            UserLoader.user_list.append(line_elem)
 
     @staticmethod
     def get_user():
