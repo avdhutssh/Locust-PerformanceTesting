@@ -1,6 +1,5 @@
 from locust import task, SequentialTaskSet
-
-from CommonLib.LogModule import Logger, LogType
+from CommonLib.LogModule import *
 from CommonLib.UtilHelper import UtilHelper
 
 
