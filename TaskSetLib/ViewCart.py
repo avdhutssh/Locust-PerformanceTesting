@@ -1,5 +1,4 @@
-from locust import SequentialTaskSet, task
-
+from locust import task, SequentialTaskSet
 from CommonLib.UtilHelper import UtilHelper
 
 
