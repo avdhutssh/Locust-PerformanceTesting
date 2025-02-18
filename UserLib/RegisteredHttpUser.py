@@ -1,14 +1,13 @@
-from locust import HttpUser, between
-from locust.exception import StopUser
-
-from CommonLib.LogModule import LogType, Logger
-from CommonLib.UserLoader import UserLoader
+from locust import between, clients
+from CommonLib.LogModule import *
 from CommonLib.UtilHelper import UtilHelper
+from locust.exception import StopUser
+from CommonLib.UserLoader import UserLoader
 from UserLib.AbstractUser import AbstractUser
 
 
 class RegisteredHttpUser(AbstractUser):
-    wait_time = between(3, 5)
+    wait_time = between(1, 2)
     abstract = True
 
     def verify_login_success(self, response, email):
