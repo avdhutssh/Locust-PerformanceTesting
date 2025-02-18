@@ -1,10 +1,10 @@
-from locust import SequentialTaskSet, task
-
-from CommonLib.LogModule import Logger
+from locust import task, SequentialTaskSet
+from CommonLib.LogModule import *
 from CommonLib.UtilHelper import UtilHelper
 
 
 class MyAccountNavigate(SequentialTaskSet):
+
     @task
     def fetch_personal_information(self):
         header = UtilHelper.get_base_header_with_cookie(self.user.get_cookie())
