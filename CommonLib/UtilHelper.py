@@ -1,6 +1,6 @@
 import random
 import string
-import datetime
+from datetime import datetime
 
 
 class UtilHelper:
@@ -14,7 +14,8 @@ class UtilHelper:
     @staticmethod
     def get_current_time_stamp():
         now = datetime.now()
-        return datetime.timestamp(now)
+        timestamp = datetime.timestamp(now)
+        return timestamp
 
     @staticmethod
     def get_base_header():
@@ -31,5 +32,4 @@ class UtilHelper:
         for item in cookie.iteritems():
             cookie_str += item[0] + "=" + item[1]
         cookie_header['Cookie'] = cookie_str
-        print("---------$$$$$$$---------" + cookie_header)
         return cookie_header
