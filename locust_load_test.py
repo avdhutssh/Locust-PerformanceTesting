@@ -8,6 +8,7 @@ from TaskSetLib.MyAccountNavigate import MyAccountNavigate
 from CommonLib.UserLoader import UserLoader
 from CommonLib.LogModule import Logger
 # from CommonLib.EventInfluxHandlers import EventInfluxHandlers
+
 from CommonLib.EventHandlers import EventHandlers
 
 
@@ -33,3 +34,4 @@ class UserGroupA(RegisteredHttpUser):
 class UserGroupB(GuestHttpUser):
     weight = 4
     GuestHttpUser.tasks = [CategoryNavigate, ViewCart]
+
