@@ -1,0 +1,2 @@
+HostName,RequestType,Name,ResponseTime,ResponseLength,Status
+DESKTOP-U80B0UL,POST,/index.php?controller=authentication,812.9999999946449,26130,PASS

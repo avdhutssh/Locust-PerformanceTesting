@@ -1,0 +1,508 @@
+[2025-02-18 19:55:12,284] DESKTOP-U80B0UL/INFO/locust_load_test: ......... Initiating Load Test .......
+[2025-02-18 19:55:12,284] DESKTOP-U80B0UL/INFO/locust.runners: Spawning 5 users at the rate 1 users/s (0 users already running)...
+[2025-02-18 19:55:12,284] DESKTOP-U80B0UL/ERROR/locust.user.task: 'cookie'
+Traceback (most recent call last):
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 284, in run
+    self.execute_next_task()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 309, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 321, in execute_task
+    task(self)
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\TaskSetLib\ViewCart.py", line 10, in get_all_cart_tem
+    header = UtilHelper.get_base_header_with_cookie(self.user.get_cookie())
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\UserLib\AbstractUser.py", line 24, in get_cookie
+    return self.user_attr['cookie']
+KeyError: 'cookie'
+
+[2025-02-18 19:55:13,298] DESKTOP-U80B0UL/ERROR/locust.user.task: 'cookie'
+Traceback (most recent call last):
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 284, in run
+    self.execute_next_task()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 309, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 419, in execute_task
+    task(self.user).run()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 270, in run
+    self.on_start()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\TaskSetLib\CategoryNavigate.py", line 10, in on_start
+    self.header = UtilHelper.get_base_header_with_cookie(self.user.get_cookie())
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\UserLib\AbstractUser.py", line 24, in get_cookie
+    return self.user_attr['cookie']
+KeyError: 'cookie'
+
+[2025-02-18 19:55:14,313] DESKTOP-U80B0UL/ERROR/locust.user.task: 'cookie'
+Traceback (most recent call last):
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 284, in run
+    self.execute_next_task()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 309, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 419, in execute_task
+    task(self.user).run()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 270, in run
+    self.on_start()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\TaskSetLib\CategoryNavigate.py", line 10, in on_start
+    self.header = UtilHelper.get_base_header_with_cookie(self.user.get_cookie())
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\UserLib\AbstractUser.py", line 24, in get_cookie
+    return self.user_attr['cookie']
+KeyError: 'cookie'
+
+[2025-02-18 19:55:15,998] DESKTOP-U80B0UL/ERROR/locust.user.task: 'cookie'
+Traceback (most recent call last):
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 284, in run
+    self.execute_next_task()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 309, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 419, in execute_task
+    task(self.user).run()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 270, in run
+    self.on_start()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\TaskSetLib\CategoryNavigate.py", line 10, in on_start
+    self.header = UtilHelper.get_base_header_with_cookie(self.user.get_cookie())
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\UserLib\AbstractUser.py", line 24, in get_cookie
+    return self.user_attr['cookie']
+KeyError: 'cookie'
+
+[2025-02-18 19:55:16,141] DESKTOP-U80B0UL/INFO/locust_load_test: Login successful with user : perf_user_5@gmail.com
+[2025-02-18 19:55:16,141] DESKTOP-U80B0UL/ERROR/locust.user.task: can only concatenate str (not "dict") to str
+Traceback (most recent call last):
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 284, in run
+    self.execute_next_task()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 309, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 321, in execute_task
+    task(self)
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\TaskSetLib\MyAccountNavigate.py", line 10, in fetch_personal_information
+    header = UtilHelper.get_base_header_with_cookie(self.user.get_cookie())
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\CommonLib\UtilHelper.py", line 34, in get_base_header_with_cookie
+    print("---------$$$$$$$---------" + cookie_header)
+TypeError: can only concatenate str (not "dict") to str
+
+[2025-02-18 19:55:16,331] DESKTOP-U80B0UL/INFO/locust.runners: All users spawned: UserGroupA: 1, UserGroupB: 4 (0 already running)
+[2025-02-18 19:55:16,334] DESKTOP-U80B0UL/ERROR/locust.user.task: 'cookie'
+Traceback (most recent call last):
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 284, in run
+    self.execute_next_task()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 309, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 419, in execute_task
+    task(self.user).run()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 270, in run
+    self.on_start()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\TaskSetLib\CategoryNavigate.py", line 10, in on_start
+    self.header = UtilHelper.get_base_header_with_cookie(self.user.get_cookie())
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\UserLib\AbstractUser.py", line 24, in get_cookie
+    return self.user_attr['cookie']
+KeyError: 'cookie'
+
+[2025-02-18 19:55:17,066] DESKTOP-U80B0UL/ERROR/locust.user.task: 'cookie'
+Traceback (most recent call last):
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 284, in run
+    self.execute_next_task()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 309, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 419, in execute_task
+    task(self.user).run()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 270, in run
+    self.on_start()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\TaskSetLib\CategoryNavigate.py", line 10, in on_start
+    self.header = UtilHelper.get_base_header_with_cookie(self.user.get_cookie())
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\UserLib\AbstractUser.py", line 24, in get_cookie
+    return self.user_attr['cookie']
+KeyError: 'cookie'
+
+[2025-02-18 19:55:19,281] DESKTOP-U80B0UL/ERROR/locust.user.task: 'cookie'
+Traceback (most recent call last):
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 284, in run
+    self.execute_next_task()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 309, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 419, in execute_task
+    task(self.user).run()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 270, in run
+    self.on_start()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\TaskSetLib\CategoryNavigate.py", line 10, in on_start
+    self.header = UtilHelper.get_base_header_with_cookie(self.user.get_cookie())
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\UserLib\AbstractUser.py", line 24, in get_cookie
+    return self.user_attr['cookie']
+KeyError: 'cookie'
+
+[2025-02-18 19:55:19,624] DESKTOP-U80B0UL/ERROR/locust.user.task: 'cookie'
+Traceback (most recent call last):
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 284, in run
+    self.execute_next_task()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 309, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 321, in execute_task
+    task(self)
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\TaskSetLib\ViewCart.py", line 10, in get_all_cart_tem
+    header = UtilHelper.get_base_header_with_cookie(self.user.get_cookie())
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\UserLib\AbstractUser.py", line 24, in get_cookie
+    return self.user_attr['cookie']
+KeyError: 'cookie'
+
+[2025-02-18 19:55:20,990] DESKTOP-U80B0UL/ERROR/locust.user.task: 'cookie'
+Traceback (most recent call last):
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 284, in run
+    self.execute_next_task()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 309, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 419, in execute_task
+    task(self.user).run()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 270, in run
+    self.on_start()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\TaskSetLib\CategoryNavigate.py", line 10, in on_start
+    self.header = UtilHelper.get_base_header_with_cookie(self.user.get_cookie())
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\UserLib\AbstractUser.py", line 24, in get_cookie
+    return self.user_attr['cookie']
+KeyError: 'cookie'
+
+[2025-02-18 19:55:21,150] DESKTOP-U80B0UL/ERROR/locust.user.task: can only concatenate str (not "dict") to str
+Traceback (most recent call last):
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 284, in run
+    self.execute_next_task()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 309, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 419, in execute_task
+    task(self.user).run()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 270, in run
+    self.on_start()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\TaskSetLib\CategoryNavigate.py", line 10, in on_start
+    self.header = UtilHelper.get_base_header_with_cookie(self.user.get_cookie())
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\CommonLib\UtilHelper.py", line 34, in get_base_header_with_cookie
+    print("---------$$$$$$$---------" + cookie_header)
+TypeError: can only concatenate str (not "dict") to str
+
+[2025-02-18 19:55:21,339] DESKTOP-U80B0UL/ERROR/locust.user.task: 'cookie'
+Traceback (most recent call last):
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 284, in run
+    self.execute_next_task()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 309, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 321, in execute_task
+    task(self)
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\TaskSetLib\ViewCart.py", line 10, in get_all_cart_tem
+    header = UtilHelper.get_base_header_with_cookie(self.user.get_cookie())
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\UserLib\AbstractUser.py", line 24, in get_cookie
+    return self.user_attr['cookie']
+KeyError: 'cookie'
+
+[2025-02-18 19:55:22,684] DESKTOP-U80B0UL/ERROR/locust.user.task: 'cookie'
+Traceback (most recent call last):
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 284, in run
+    self.execute_next_task()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 309, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 419, in execute_task
+    task(self.user).run()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 270, in run
+    self.on_start()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\TaskSetLib\CategoryNavigate.py", line 10, in on_start
+    self.header = UtilHelper.get_base_header_with_cookie(self.user.get_cookie())
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\UserLib\AbstractUser.py", line 24, in get_cookie
+    return self.user_attr['cookie']
+KeyError: 'cookie'
+
+[2025-02-18 19:55:23,664] DESKTOP-U80B0UL/ERROR/locust.user.task: 'cookie'
+Traceback (most recent call last):
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 284, in run
+    self.execute_next_task()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 309, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 321, in execute_task
+    task(self)
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\TaskSetLib\ViewCart.py", line 10, in get_all_cart_tem
+    header = UtilHelper.get_base_header_with_cookie(self.user.get_cookie())
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\UserLib\AbstractUser.py", line 24, in get_cookie
+    return self.user_attr['cookie']
+KeyError: 'cookie'
+
+[2025-02-18 19:55:24,029] DESKTOP-U80B0UL/ERROR/locust.user.task: 'cookie'
+Traceback (most recent call last):
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 284, in run
+    self.execute_next_task()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 309, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 419, in execute_task
+    task(self.user).run()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 270, in run
+    self.on_start()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\TaskSetLib\CategoryNavigate.py", line 10, in on_start
+    self.header = UtilHelper.get_base_header_with_cookie(self.user.get_cookie())
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\UserLib\AbstractUser.py", line 24, in get_cookie
+    return self.user_attr['cookie']
+KeyError: 'cookie'
+
+[2025-02-18 19:55:25,800] DESKTOP-U80B0UL/ERROR/locust.user.task: can only concatenate str (not "dict") to str
+Traceback (most recent call last):
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 284, in run
+    self.execute_next_task()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 309, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 419, in execute_task
+    task(self.user).run()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 270, in run
+    self.on_start()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\TaskSetLib\CategoryNavigate.py", line 10, in on_start
+    self.header = UtilHelper.get_base_header_with_cookie(self.user.get_cookie())
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\CommonLib\UtilHelper.py", line 34, in get_base_header_with_cookie
+    print("---------$$$$$$$---------" + cookie_header)
+TypeError: can only concatenate str (not "dict") to str
+
+[2025-02-18 19:55:26,005] DESKTOP-U80B0UL/ERROR/locust.user.task: 'cookie'
+Traceback (most recent call last):
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 284, in run
+    self.execute_next_task()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 309, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 419, in execute_task
+    task(self.user).run()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 270, in run
+    self.on_start()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\TaskSetLib\CategoryNavigate.py", line 10, in on_start
+    self.header = UtilHelper.get_base_header_with_cookie(self.user.get_cookie())
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\UserLib\AbstractUser.py", line 24, in get_cookie
+    return self.user_attr['cookie']
+KeyError: 'cookie'
+
+[2025-02-18 19:55:26,180] DESKTOP-U80B0UL/ERROR/locust.user.task: 'cookie'
+Traceback (most recent call last):
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 284, in run
+    self.execute_next_task()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 309, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 419, in execute_task
+    task(self.user).run()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 270, in run
+    self.on_start()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\TaskSetLib\CategoryNavigate.py", line 10, in on_start
+    self.header = UtilHelper.get_base_header_with_cookie(self.user.get_cookie())
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\UserLib\AbstractUser.py", line 24, in get_cookie
+    return self.user_attr['cookie']
+KeyError: 'cookie'
+
+[2025-02-18 19:55:27,435] DESKTOP-U80B0UL/ERROR/locust.user.task: 'cookie'
+Traceback (most recent call last):
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 284, in run
+    self.execute_next_task()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 309, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 321, in execute_task
+    task(self)
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\TaskSetLib\ViewCart.py", line 10, in get_all_cart_tem
+    header = UtilHelper.get_base_header_with_cookie(self.user.get_cookie())
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\UserLib\AbstractUser.py", line 24, in get_cookie
+    return self.user_attr['cookie']
+KeyError: 'cookie'
+
+[2025-02-18 19:55:28,416] DESKTOP-U80B0UL/ERROR/locust.user.task: 'cookie'
+Traceback (most recent call last):
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 284, in run
+    self.execute_next_task()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 309, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 419, in execute_task
+    task(self.user).run()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 270, in run
+    self.on_start()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\TaskSetLib\CategoryNavigate.py", line 10, in on_start
+    self.header = UtilHelper.get_base_header_with_cookie(self.user.get_cookie())
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\UserLib\AbstractUser.py", line 24, in get_cookie
+    return self.user_attr['cookie']
+KeyError: 'cookie'
+
+[2025-02-18 19:55:29,304] DESKTOP-U80B0UL/ERROR/locust.user.task: 'cookie'
+Traceback (most recent call last):
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 284, in run
+    self.execute_next_task()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 309, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 419, in execute_task
+    task(self.user).run()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 270, in run
+    self.on_start()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\TaskSetLib\CategoryNavigate.py", line 10, in on_start
+    self.header = UtilHelper.get_base_header_with_cookie(self.user.get_cookie())
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\UserLib\AbstractUser.py", line 24, in get_cookie
+    return self.user_attr['cookie']
+KeyError: 'cookie'
+
+[2025-02-18 19:55:29,922] DESKTOP-U80B0UL/ERROR/locust.user.task: 'cookie'
+Traceback (most recent call last):
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 284, in run
+    self.execute_next_task()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 309, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 321, in execute_task
+    task(self)
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\TaskSetLib\ViewCart.py", line 10, in get_all_cart_tem
+    header = UtilHelper.get_base_header_with_cookie(self.user.get_cookie())
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\UserLib\AbstractUser.py", line 24, in get_cookie
+    return self.user_attr['cookie']
+KeyError: 'cookie'
+
+[2025-02-18 19:55:30,478] DESKTOP-U80B0UL/ERROR/locust.user.task: can only concatenate str (not "dict") to str
+Traceback (most recent call last):
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 284, in run
+    self.execute_next_task()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 309, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 321, in execute_task
+    task(self)
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\TaskSetLib\MyAccountNavigate.py", line 10, in fetch_personal_information
+    header = UtilHelper.get_base_header_with_cookie(self.user.get_cookie())
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\CommonLib\UtilHelper.py", line 34, in get_base_header_with_cookie
+    print("---------$$$$$$$---------" + cookie_header)
+TypeError: can only concatenate str (not "dict") to str
+
+[2025-02-18 19:55:30,637] DESKTOP-U80B0UL/ERROR/locust.user.task: 'cookie'
+Traceback (most recent call last):
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 284, in run
+    self.execute_next_task()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 309, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 321, in execute_task
+    task(self)
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\TaskSetLib\ViewCart.py", line 10, in get_all_cart_tem
+    header = UtilHelper.get_base_header_with_cookie(self.user.get_cookie())
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\UserLib\AbstractUser.py", line 24, in get_cookie
+    return self.user_attr['cookie']
+KeyError: 'cookie'
+
+[2025-02-18 19:55:31,922] DESKTOP-U80B0UL/ERROR/locust.user.task: 'cookie'
+Traceback (most recent call last):
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 284, in run
+    self.execute_next_task()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 309, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 321, in execute_task
+    task(self)
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\TaskSetLib\ViewCart.py", line 10, in get_all_cart_tem
+    header = UtilHelper.get_base_header_with_cookie(self.user.get_cookie())
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\UserLib\AbstractUser.py", line 24, in get_cookie
+    return self.user_attr['cookie']
+KeyError: 'cookie'
+
+[2025-02-18 19:55:33,541] DESKTOP-U80B0UL/ERROR/locust.user.task: 'cookie'
+Traceback (most recent call last):
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 284, in run
+    self.execute_next_task()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 309, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 321, in execute_task
+    task(self)
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\TaskSetLib\ViewCart.py", line 10, in get_all_cart_tem
+    header = UtilHelper.get_base_header_with_cookie(self.user.get_cookie())
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\UserLib\AbstractUser.py", line 24, in get_cookie
+    return self.user_attr['cookie']
+KeyError: 'cookie'
+
+[2025-02-18 19:55:33,668] DESKTOP-U80B0UL/ERROR/locust.user.task: can only concatenate str (not "dict") to str
+Traceback (most recent call last):
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 284, in run
+    self.execute_next_task()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 309, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 419, in execute_task
+    task(self.user).run()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 270, in run
+    self.on_start()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\TaskSetLib\CategoryNavigate.py", line 10, in on_start
+    self.header = UtilHelper.get_base_header_with_cookie(self.user.get_cookie())
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\CommonLib\UtilHelper.py", line 34, in get_base_header_with_cookie
+    print("---------$$$$$$$---------" + cookie_header)
+TypeError: can only concatenate str (not "dict") to str
+
+[2025-02-18 19:55:34,414] DESKTOP-U80B0UL/ERROR/locust.user.task: 'cookie'
+Traceback (most recent call last):
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 284, in run
+    self.execute_next_task()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 309, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 321, in execute_task
+    task(self)
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\TaskSetLib\ViewCart.py", line 10, in get_all_cart_tem
+    header = UtilHelper.get_base_header_with_cookie(self.user.get_cookie())
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\UserLib\AbstractUser.py", line 24, in get_cookie
+    return self.user_attr['cookie']
+KeyError: 'cookie'
+
+[2025-02-18 19:55:34,444] DESKTOP-U80B0UL/ERROR/locust.user.task: 'cookie'
+Traceback (most recent call last):
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 284, in run
+    self.execute_next_task()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 309, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 321, in execute_task
+    task(self)
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\TaskSetLib\ViewCart.py", line 10, in get_all_cart_tem
+    header = UtilHelper.get_base_header_with_cookie(self.user.get_cookie())
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\UserLib\AbstractUser.py", line 24, in get_cookie
+    return self.user_attr['cookie']
+KeyError: 'cookie'
+
+[2025-02-18 19:55:36,189] DESKTOP-U80B0UL/ERROR/locust.user.task: 'cookie'
+Traceback (most recent call last):
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 284, in run
+    self.execute_next_task()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 309, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 419, in execute_task
+    task(self.user).run()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 270, in run
+    self.on_start()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\TaskSetLib\CategoryNavigate.py", line 10, in on_start
+    self.header = UtilHelper.get_base_header_with_cookie(self.user.get_cookie())
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\UserLib\AbstractUser.py", line 24, in get_cookie
+    return self.user_attr['cookie']
+KeyError: 'cookie'
+
+[2025-02-18 19:55:37,333] DESKTOP-U80B0UL/ERROR/locust.user.task: can only concatenate str (not "dict") to str
+Traceback (most recent call last):
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 284, in run
+    self.execute_next_task()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 309, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 321, in execute_task
+    task(self)
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\TaskSetLib\ViewCart.py", line 10, in get_all_cart_tem
+    header = UtilHelper.get_base_header_with_cookie(self.user.get_cookie())
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\CommonLib\UtilHelper.py", line 34, in get_base_header_with_cookie
+    print("---------$$$$$$$---------" + cookie_header)
+TypeError: can only concatenate str (not "dict") to str
+
+[2025-02-18 19:55:37,584] DESKTOP-U80B0UL/ERROR/locust.user.task: 'cookie'
+Traceback (most recent call last):
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 284, in run
+    self.execute_next_task()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 309, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 419, in execute_task
+    task(self.user).run()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 270, in run
+    self.on_start()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\TaskSetLib\CategoryNavigate.py", line 10, in on_start
+    self.header = UtilHelper.get_base_header_with_cookie(self.user.get_cookie())
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\UserLib\AbstractUser.py", line 24, in get_cookie
+    return self.user_attr['cookie']
+KeyError: 'cookie'
+
+[2025-02-18 19:55:38,204] DESKTOP-U80B0UL/ERROR/locust.user.task: 'cookie'
+Traceback (most recent call last):
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 284, in run
+    self.execute_next_task()
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 309, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\.venv\lib\site-packages\locust\user\task.py", line 321, in execute_task
+    task(self)
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\TaskSetLib\ViewCart.py", line 10, in get_all_cart_tem
+    header = UtilHelper.get_base_header_with_cookie(self.user.get_cookie())
+  File "C:\Users\Avdhut\Desktop\Learnings\GithubProjects\Locust-PerformanceTesting\UserLib\AbstractUser.py", line 24, in get_cookie
+    return self.user_attr['cookie']
+KeyError: 'cookie'
+
+[2025-02-18 19:55:38,205] DESKTOP-U80B0UL/INFO/locust.runners: Stopping 5 users
+[2025-02-18 19:55:38,205] DESKTOP-U80B0UL/INFO/locust.runners: 5 Users have been stopped
+[2025-02-18 19:55:38,205] DESKTOP-U80B0UL/INFO/locust_load_test: ........ Load Test Completed ........
+[2025-02-18 19:55:39,892] DESKTOP-U80B0UL/INFO/locust.main: Running teardowns...
+[2025-02-18 19:55:39,892] DESKTOP-U80B0UL/INFO/locust.main: Shutting down (exit code 1), bye.
+[2025-02-18 19:55:39,892] DESKTOP-U80B0UL/INFO/locust.main: Cleaning up runner...

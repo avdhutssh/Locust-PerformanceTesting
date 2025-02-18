@@ -1,22 +1,40 @@
 from locust import task, SequentialTaskSet
 
+from CommonLib.LogModule import Logger, LogType
+from CommonLib.UtilHelper import UtilHelper
 
-class NavigateByCategory(SequentialTaskSet):
+
+class CategoryNavigate(SequentialTaskSet):
+
+    def on_start(self):
+        self.header = UtilHelper.get_base_header_with_cookie(self.user.get_cookie())
 
     @task
     def navigate_to_women_category(self):
-        print("Navigating to Women Category ..")
-        pass
+        with self.client.get("/index.php?id_category=3&controller=category", headers=self.header,
+                             catch_response=True) as response:
+            if response.status_code != 200:
+                response.failure("Failed to navigate to women category, EXCEPTION: " + response.text)
+                Logger.log_message("Failed to navigate to women category, Status Code-" +
+                                   str(response.status_code), LogType.ERROR)
 
     @task
     def navigate_to_dresses_category(self):
-        print("Navigating to Dresses Category ..")
-        pass
+        with self.client.get("/index.php?id_category=8&controller=category", headers=self.header,
+                             catch_response=True) as response:
+            if response.status_code != 200:
+                response.failure("Failed to navigate to dresses category, EXCEPTION: " + response.text)
+                Logger.log_message("Failed to navigate to dresses category, Status Code-" +
+                                   str(response.status_code), LogType.ERROR)
 
     @task
     def navigate_to_shirt_category(self):
-        print("Navigating to Shirts Category ..")
-        pass
+        with self.client.get("/index.php?id_category=5&controller=category", headers=self.header,
+                             catch_response=True) as response:
+            if response.status_code != 200:
+                response.failure("Failed to navigate to shirt category, EXCEPTION: " + response.text)
+                Logger.log_message("Failed to navigate to shirt category, Status Code-" +
+                                   str(response.status_code), LogType.ERROR)
 
     @task
     def exit_task_execution(self):
