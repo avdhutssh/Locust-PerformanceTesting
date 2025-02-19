@@ -7,9 +7,10 @@ from UserLib.RegisteredHttpUser import RegisteredHttpUser
 from TaskSetLib.MyAccountNavigate import MyAccountNavigate
 from CommonLib.UserLoader import UserLoader
 from CommonLib.LogModule import Logger
-# from CommonLib.EventInfluxHandlers import EventInfluxHandlers
+from CommonLib.EventInfluxHandlers import EventInfluxHandlers
 
-from CommonLib.EventHandlers import EventHandlers
+
+# from CommonLib.EventHandlers import EventHandlers
 
 
 @events.test_start.add_listener
@@ -17,7 +18,8 @@ def on_test_start(**kwargs):
     if kwargs['environment'].parsed_options.logfile:
         Logger.init_logger(__name__, kwargs['environment'].parsed_options.logfile)
     UserLoader.load_users()
-    # EventInfluxHandlers.init_influx_client()
+    Logger.log_message("......... Connecting to Influx-db .......")
+    EventInfluxHandlers.init_influx_client()
     Logger.log_message("......... Initiating Load Test .......")
 
 
@@ -34,4 +36,3 @@ class UserGroupA(RegisteredHttpUser):
 class UserGroupB(GuestHttpUser):
     weight = 4
     GuestHttpUser.tasks = [CategoryNavigate, ViewCart]
-
