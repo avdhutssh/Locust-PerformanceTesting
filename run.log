@@ -1,22 +1,46 @@
-[2025-02-18 20:32:51,363] DESKTOP-U80B0UL/INFO/locust_load_test: ......... Initiating Load Test .......
-[2025-02-18 20:32:51,364] DESKTOP-U80B0UL/INFO/locust.runners: Spawning 5 users at the rate 1 users/s (0 users already running)...
-[2025-02-18 20:32:55,004] DESKTOP-U80B0UL/INFO/locust_load_test: Login successful with user : perf_user_5@gmail.com
-[2025-02-18 20:32:55,376] DESKTOP-U80B0UL/INFO/locust.runners: All users spawned: UserGroupA: 1, UserGroupB: 4 (0 already running)
-[2025-02-18 20:32:55,473] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
-[2025-02-18 20:32:57,947] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
-[2025-02-18 20:33:00,105] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
-[2025-02-18 20:33:32,378] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
-[2025-02-18 20:33:40,509] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
-[2025-02-18 20:33:53,483] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
-[2025-02-18 20:34:01,089] DESKTOP-U80B0UL/INFO/locust.runners: Spawning 5 users at the rate 1 users/s (5 users already running)...
-[2025-02-18 20:34:05,125] DESKTOP-U80B0UL/INFO/locust.runners: All users spawned: UserGroupA: 1, UserGroupB: 4 (5 already running)
-[2025-02-18 20:34:29,717] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
-[2025-02-18 20:34:32,734] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
-[2025-02-18 20:34:45,106] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
-[2025-02-18 20:34:46,773] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
-[2025-02-18 20:34:58,967] DESKTOP-U80B0UL/INFO/locust.runners: Stopping 9 users
-[2025-02-18 20:34:58,973] DESKTOP-U80B0UL/INFO/locust.runners: 9 Users have been stopped
-[2025-02-18 20:34:58,973] DESKTOP-U80B0UL/INFO/locust_load_test: ........ Load Test Completed ........
-[2025-02-18 20:35:03,929] DESKTOP-U80B0UL/INFO/locust.main: Running teardowns...
-[2025-02-18 20:35:03,934] DESKTOP-U80B0UL/INFO/locust.main: Shutting down (exit code 1), bye.
-[2025-02-18 20:35:03,934] DESKTOP-U80B0UL/INFO/locust.main: Cleaning up runner...
+[2025-02-19 22:13:46,718] DESKTOP-U80B0UL/INFO/locust_load_test: ......... Connecting to Influx-db .......
+[2025-02-19 22:13:46,739] DESKTOP-U80B0UL/INFO/locust_load_test: ......... Initiating Load Test .......
+[2025-02-19 22:13:46,741] DESKTOP-U80B0UL/INFO/locust.runners: Spawning 10 users at the rate 5 users/s (0 users already running)...
+[2025-02-19 22:13:47,705] DESKTOP-U80B0UL/INFO/locust_load_test: Login successful with user : perf_user_5@gmail.com
+[2025-02-19 22:13:48,567] DESKTOP-U80B0UL/INFO/locust.runners: All users spawned: UserGroupA: 2, UserGroupB: 8 (0 already running)
+[2025-02-19 22:13:51,041] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
+[2025-02-19 22:13:53,271] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
+[2025-02-19 22:14:04,399] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
+[2025-02-19 22:14:43,948] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
+[2025-02-19 22:14:45,903] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
+[2025-02-19 22:14:55,098] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
+[2025-02-19 22:15:12,286] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
+[2025-02-19 22:15:14,115] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
+[2025-02-19 22:15:22,557] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
+[2025-02-19 22:15:24,150] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
+[2025-02-19 22:15:33,607] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
+[2025-02-19 22:15:36,067] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
+[2025-02-19 22:15:44,912] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
+[2025-02-19 22:16:03,283] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
+[2025-02-19 22:16:05,616] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
+[2025-02-19 22:16:10,774] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
+[2025-02-19 22:16:12,242] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
+[2025-02-19 22:16:16,210] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
+[2025-02-19 22:16:20,542] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
+[2025-02-19 22:16:41,758] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
+[2025-02-19 22:17:04,092] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
+[2025-02-19 22:17:21,277] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
+[2025-02-19 22:17:22,859] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
+[2025-02-19 22:17:27,260] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
+[2025-02-19 22:17:43,127] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
+[2025-02-19 22:17:45,497] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
+[2025-02-19 22:17:57,865] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
+[2025-02-19 22:17:59,428] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
+[2025-02-19 22:18:21,396] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
+[2025-02-19 22:18:25,404] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
+[2025-02-19 22:18:37,420] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
+[2025-02-19 22:18:46,152] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
+[2025-02-19 22:18:48,424] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
+[2025-02-19 22:19:03,726] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
+[2025-02-19 22:19:06,128] DESKTOP-U80B0UL/INFO/locust_load_test: fetch my-account user address perf_user_5@gmail.com
+[2025-02-19 22:19:08,845] DESKTOP-U80B0UL/INFO/locust.main: Running teardowns...
+[2025-02-19 22:19:08,846] DESKTOP-U80B0UL/INFO/locust.main: Shutting down (exit code 1), bye.
+[2025-02-19 22:19:08,846] DESKTOP-U80B0UL/INFO/locust.main: Cleaning up runner...
+[2025-02-19 22:19:08,847] DESKTOP-U80B0UL/INFO/locust.runners: Stopping 9 users
+[2025-02-19 22:19:08,852] DESKTOP-U80B0UL/INFO/locust.runners: 9 Users have been stopped
+[2025-02-19 22:19:08,853] DESKTOP-U80B0UL/INFO/locust_load_test: ........ Load Test Completed ........
